@@ -1,0 +1,26 @@
+let saldo = diminuir(100, 40);
+
+function diminuir(numA, numB) {
+    let conta = numA - numB;
+    return conta;
+}
+
+let nivel;
+
+if (saldo < 10) {
+    nivel = "ferro";
+} else if (saldo >= 10 && saldo < 20) {
+    nivel = "bronze";
+} else if (saldo >= 20 && saldo < 50) {
+    nivel = "prata";
+} else if (saldo >= 50 && saldo < 80) {
+    nivel = "ouro";
+} else if (saldo >= 80 && saldo < 90) {
+    nivel = "diamante";
+} else if (saldo >= 90 && saldo < 100) {
+    nivel = "lendário";
+} else if (saldo >= 100) { 
+    nivel = "imortal";
+}
+
+console.log("O saldo de rankeadas é " + saldo + ". E o jogador está no nível " + nivel + ".");
